@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+    width: 75%;
+    margin: auto;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+nav a h3 {
+    color: gray;
+}
+
+nav a h3:hover, nav a h3:active {
+    color: black;
+}
+
+hr {
+    margin: auto;
+    border: 1px solid gray;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.flextext {
+margin-top: 2%;
+ font-size: 30px;
+}
+
+.flextext2 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.flexchange {
+writing-mode:sideways-lr;
+text-orientation: mixed;
+}
+
+.fleximg1 {
+margin-top: 3%;
+margin-bottom: 10%;
+}
+
+.fleximg1 img {
+    width: 100%;
+}
+
+.aboutme {
+    background-color: #F6F6F6;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.aboutmein {
+    padding: 3%;
+}
+
+.aboutmein h1 {
+    padding: 2%;
+    font-size: 46px;
+}
+
+.aboutmein p {
+    padding: 2%;
+    font-size: 18px;
+}
+
+.skills {
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.skills h1 {
+    margin-bottom: 3%;
+}
+
+.skills p {
+    font-size: 18px;
+    margin-bottom: 7%;
+}
+
+.skillsprog {
+    display: flex;
+    justify-content: space-around;
+}
+
+.adobe img {
+    margin-bottom: 15%;
+    width: 100px;
+    height: 100px;
+}
+
+.adobe h1 {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 15%;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.gray {
+    color: rgb(211, 211, 211);
+}
+
+.portfolio {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.first img {
+background-size: cover;
+
+}
+
+.portfolio h1 {
+    margin-bottom: 5%;
+}
+
+.first p, .first a {
+    margin-top: 5%;
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 15%;
+}
+
+.first img {
+    width: 100%;
+}
+
+.contacts {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.contacts h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 46px;
+}
+
+.contacts p {
+    font-size: 20px;
+}
+
+.contacts button {
+    margin: auto;
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 25px;
+    border: none;
+    margin-top: 3%;
+}
+
+.contacts button h1 {
+    font-size: 20px;
+    color: white;
+}
+
+.contacts button:hover {
+    background-color: gray;
+}
+
+.contacts button:active {
+    background-color: black;
+}
+
+footer { 
+    margin: auto;
+    width: 50%;
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer p {
+    color: gray;
+    font-size: 15px;
+}
+
+.footerl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.footerl i {
+    font-size: 55px;
+    color: black;
+}
+
+.footerl i:hover {
+    color: gray;
+}
+
+.openmobile {
+    text-align: end;
+    font-size: 35px;
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; 
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: gray;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 50px;
+  }
+
+@media only screen and (max-width: 600px) {
+
+    .openmobile {
+        display: block;
+    }
+
+    .flexcontainer {
+        flex-direction: column;
+    }
+
+    .links {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .skillsprog {
+        flex-direction: column;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .contacts button {
+        margin-top: 15%;
+        width: 90%;
+        display: flex;
+    }
+
+    .flexchange {
+        display: none;
+    }
+
+    .adobe img {
+        margin-bottom: 3%;
+    }
+
+    .adobe h1 {
+        margin-bottom: 3%;
+    }
+
+    .stars {
+        margin-bottom: 15%;
+    }
+
+  }
